@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                background-color: rgb(73, 73, 255);
+                /* ----------------- */
+                text-align: center;
+            }
+
+            .heading {
+                margin-top: 50px;
+                /* -------------------- */
+                border: 1px solid white;
+            }
+
+            .container-cards {
+                margin: 80px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 30px;
+                align-items: center;
+            }
+
+            .container-card {
+                background-color: cornsilk;
+                border: none;
+                box-shadow: 2px 2px 6px 0px rgba(128, 19, 19, 0.3);
+                border-radius: 20px;
+                /* -------------------- */
+                /* text-align: center; */
+                width: 250px;
+                transition: transform 0.3s;
+            }
+
+            .container-card:hover {
+                transform: translateY(5px);
+                box-shadow: 2px 2px 6px 0px rgba(128, 19, 19, 0.3);
+            }
+
+            .container-card > img {
+                height: 150px;
+                /* width: 50%; */
+                border-radius: 50%;
+            }
+
+            .container-textarea {
+                padding: 0 20px 20px;
+            }
+
+            .container-textarea h3 {
+                text-transform: uppercase;
+                padding: 5px;
+            }
+
+            .container-textarea h4 {
+                color: skyblue;
+                padding: 5px;
+            }
+
+            .container-textarea p {
+                padding: 5px;
+            }
+
+            .icons {
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+            .logo {
+                width: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                justify-content: space-between;
+                border: 1px solid black;
+                cursor: pointer;
+                color:blue;
+            }
+
+            /* -------------------------------- */
+            @media (max-width: 1007px) {
+                .container-cards {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            /* -------------------------------- */
+            @media (max-width: 480px) {
+                .container-cards {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- main container starts here -->
+
+        <div class="container">
+            <!-- heading start -->
+
+            <div class="heading">
+                <h1>Our Team</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <!-- heading ends  -->
+
+            <!-- container card ends here  -->
+
+            <div class="container-cards">
+                <!-- Card 1 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <a href="#"
+                                ><img
+                                    src="facebook.png"
+                                    alt="fblogo"
+                                    class="logo"
+                            /></a>
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 ends here-->
+
+                <!-- Card 2 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 ends here-->
+
+                <!-- Card 3 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 ends here-->
+
+                <!-- Card 4 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 ends here-->
+
+                <!-- Card 5 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 ends here-->
+
+                <!-- Card 6 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 ends here-->
+
+                <!-- Card 7 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 ends here-->
+
+                <!-- Card 8 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 ends here-->
+
+                <!-- Card 9 starts here-->
+
+                <div class="container-card">
+                    <img src="pic2.jpg" alt="pic1" />
+                    <div class="container-textarea">
+                        <h3>Card1</h3>
+                        <h4>Team member</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sint saepe
+                        </p>
+                        <div class="icons">
+                            <img src="facebook.png" alt="fblogo" class="logo" />
+                            <img
+                                src="instagram.png"
+                                alt="instalogo"
+                                class="logo"
+                            />
+                            <img
+                                src="linkedin.png"
+                                alt="linkedInlogo"
+                                class="logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 ends here-->
+            </div>
+
+            <!-- container cards ends here  -->
+        </div>
+
+        <!-- main container ends here  -->
+    </body>
+</html>
