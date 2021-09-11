@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About Us</title>
+
         <style>
             * {
                 padding: 0;
@@ -13,25 +14,66 @@
 
             body {
                 /* background-color: rgb(73, 73, 255); */
-                background: linear-gradient(to right, blue, rgb(65, 0, 0));
-                /* ----------------- */
-                text-align: center;
+                background: linear-gradient(to right, blue, rgb(126, 8, 223));
             }
 
+            /* Heading  */
             .heading {
                 margin-top: 50px;
                 /* -------------------- */
                 border: 1px solid white;
             }
 
-            .teach{
+            h1 {
+                color: white;
+                text-align: center;
+            }
+
+            /* Teach and maimt   */
+
+            .teach,
+            .maimt {
                 margin-top: 70px;
             }
 
-            .teach-card{
+            .teach-card,
+            .maimt-card {
                 margin: 0 auto;
-              
             }
+            .maimt-card {
+                width: 85%;
+            }
+
+            .maimt-card {
+                /* border: 1px solid white; */
+                background-color: white;
+                /* border-radius: 20px; */
+                grid-template-columns: auto auto;
+                display: grid;
+            }
+
+            .maimt-textarea {
+                /* float: right; */
+                /* width: 50%; */
+                /* padding: 30px; */
+                /* border:1px solid yellow; */
+                /* text-align: left; */
+                text-align: center;
+            }
+
+            .maimt-pic img {
+                height: 200px;
+                /* float: left;
+            width: 50%;
+            padding: 15px; */
+                object-fit: cover;
+            }
+            .maimtpic {
+                height: 210px;
+                border-radius: 20px;
+            }
+
+            /* Student cards  */
 
             .container-cards {
                 margin: 80px;
@@ -41,22 +83,24 @@
                 align-items: center;
             }
 
-            .container-card , .teach-card{
+            .container-card,
+            .teach-card {
                 background-color: cornsilk;
                 border: none;
                 box-shadow: 2px 2px 6px 0px rgba(128, 19, 19, 0.3);
                 border-radius: 20px;
                 width: 250px;
                 transition: transform 0.3s;
+                text-align: center;
             }
 
-            .container-card:hover ,.teach-card:hover{
+            .container-card:hover,
+            .teach-card:hover {
                 transform: translateY(5px);
                 box-shadow: 2px 2px 6px 0px rgba(128, 19, 19, 0.3);
             }
 
-            /* .container-card > img  */
-            .mypic{
+            .mypic {
                 height: 150px;
                 border-radius: 50%;
             }
@@ -91,44 +135,123 @@
                 padding-top: 5px;
                 padding-bottom: 5px;
                 justify-content: space-between;
+                /* ------------------------- */
                 /* border: 1px solid black; */
                 cursor: pointer;
                 color: blue;
             }
 
-            /* -------------------------------- */
+            /* ---------------Responsive----------------- */
             @media (max-width: 1007px) {
                 .container-cards {
                     grid-template-columns: repeat(2, 1fr);
                 }
+
+                /* ----------------------------------  */
+
+                .maimt-card {
+                    /* border: 1px solid white; */
+                    /* background-color: white; */
+                    /* border-radius: 20px; */
+                    display: block;
+                }
+
+                .maimt-pic {
+                    /* float: none; */
+                }
+                .maimtpic {
+                    /* height: 110px;
+            float: none; */
+                }
             }
 
-            /* -------------------------------- */
+            /* ----------------Responsive---------------- */
             @media (max-width: 480px) {
                 .container-cards {
                     grid-template-columns: repeat(1, 1fr);
                 }
+
+                .maimt-pic {
+                    width: 250px;
+                }
             }
         </style>
     </head>
+
     <body>
         <!-- main container starts here -->
 
         <div class="container">
-            <!-- heading start -->
+            <!-- -----------------------------------------  -->
+            <!-- --------------------------------------------- -->
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- Heading 1 starts here  -->
+
+            <div class="heading">
+                <h1>Our Institute</h1>
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            </div>
+
+            <!-- heading 1 ends  -->
+
+            <!-- About Institute starts here-->
+
+            <div class="maimt">
+                <!--Special Card  starts here-->
+
+                <div class="maimt-card">
+                    <div class="maimt-pic">
+                        <img
+                            src="./aboutus-img/College-pic3.PNG"
+                            alt="pic1"
+                            class="maimt-pic"
+                        />
+                        <!-- <img src="./assests/images/maimt-pic/College-pic3.PNG" alt="MAIMT-Pic" class="maimtpic" /> -->
+                    </div>
+
+                    <div class="maimt-textarea">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            e lit. Illum omnis ratione a. Voluptatem officiis
+                            porro cum obcaec ati voluptates, beatae ex odit
+                            atque alias vel quia voluptat e pariatur quam, fuga
+                            numquam?Lorem ipsum dolor, sit amet consectetur
+                            adipisicing e lit. Illum omnis ratione a. Voluptatem
+                            officiis porro cum obcaec ati voluptates, beatae ex
+                            odit atque alias vel quia voluptat e pariatur quam,
+                            fuga numquam?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Special Card  ends here-->
+            </div>
+
+            <!-- About Institute ends here-->
+
+            <!-- -----------------------------------------  -->
+            <!-- --------------------------------------------- -->
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- heading 2 start -->
 
             <div class="heading">
                 <h1>Our Team</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
             </div>
 
-            <div class="teach">
+            <!-- heading 2 ends  -->
 
+            <div class="teach">
                 <!--Special Card  starts here-->
 
                 <div class="teach-card">
-                   
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Teacher Mentor</h4>
@@ -162,15 +285,17 @@
                 <!-- Special Card  ends here-->
             </div>
 
-            <!-- heading ends  -->
-
-            <!-- container card ends here  -->
+            <!-- container card starts here  -->
 
             <div class="container-cards">
                 <!-- Card 1 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -206,7 +331,11 @@
                 <!-- Card 2 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -242,7 +371,11 @@
                 <!-- Card 3 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -278,7 +411,11 @@
                 <!-- Card 4 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -314,7 +451,11 @@
                 <!-- Card 5 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -350,7 +491,11 @@
                 <!-- Card 6 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -386,7 +531,11 @@
                 <!-- Card 7 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -422,7 +571,11 @@
                 <!-- Card 8 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
@@ -458,7 +611,11 @@
                 <!-- Card 9 starts here-->
 
                 <div class="container-card">
-                    <img src="./aboutus-img/pic2.jpg" alt="pic1" class="mypic"/>
+                    <img
+                        src="./aboutus-img/pic2.jpg"
+                        alt="pic1"
+                        class="mypic"
+                    />
                     <div class="container-textarea">
                         <h3>Card1</h3>
                         <h4>Team member</h4>
